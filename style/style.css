@@ -1,3 +1,5 @@
+/* IMPORTS ============================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap');
 /*  GERAIS ============================== */
 * {
     margin: 0;
@@ -17,6 +19,11 @@ header {
     height: 64px;
     display: flex;
     align-items: center;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 nav ul {
     display: flex;
@@ -41,4 +48,23 @@ header > div > nav > ul {
     list-style: none;
     gap: 10px;
     padding: 0;
+}
+#section1 {
+    /* background-color: black; */
+    background-image: url("../img/bg4-section1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#me {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+    gap: 10px;
 }
