@@ -13,3 +13,6 @@ Here i'll put some of my portifolio projects
 - [ ] Use react on index
 - [ ] Main languages
 - [ ] Professional history
+
+# Pomodoro Timer (Documentation)
+https://freshman.tech/pomodoro-timer/

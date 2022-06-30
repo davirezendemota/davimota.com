@@ -1,0 +1,83 @@
+/* IMPORTS ============================== */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Lato:wght@400;700&family=Poppins:ital,wght@0,500;0,700;1,600&family=Roboto:wght@500;700&family=Sorts+Mill+Goudy&display=swap');
+/*  KEYFRAMES ============================== */
+@keyframes bg-animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+/*  ROOT ============================== */
+:root {
+    --branco: #fff;
+    --preto: #000;
+    --azul: #003566;
+    /*  GRADIENTS ============================== */
+    --gradient1: linear-gradient(to right, var(--azul), var(--preto));
+    --gradient2: linear-gradient(to right, var(--branco), var(--azul));
+    --gradient3: linear-gradient(45deg, var(--preto), var(--branco), var(--azul));
+}
+/*  GENERAL ============================== */
+* {
+    margin: 0;
+}
+body {
+    /* background-color: #e0e0e0; */
+    justify-content: center;
+    background-image: var(--gradient2);
+    background-size: 2000%;
+    animation: bg-animation 3s infinite alternate;
+}
+header {
+    background-color:var(--branco);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+header > div {
+    width: 94%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+/* TODOS ============================= */
+header > div > span {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 29px;
+    margin-right: auto;
+}
+header > div > nav > ul {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    gap: 40px;
+}
+header > div > nav > ul > li{
+    display: inline;
+    text-decoration: none;
+}
+header > div > nav > ul > li > a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--preto);
+}
+#theme-toggle{
+    width: 65px;
+    height: 22px;
+    background-color: var(--preto);
+    border-radius: 10px;
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+}
